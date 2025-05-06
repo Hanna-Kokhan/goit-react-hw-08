@@ -1,0 +1,56 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  width: 260px;
+  height: 120px;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact:hover {
+  transform: translateY(-6px) scale(1.09);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-row: 1 / span 2;
+}
+
+.name,
+.number {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.deleteBtn {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: flex-end;
+  padding: 6px 12px;
+  padding-inline-start: 10px;
+  border: 1px solid #000;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: fit-content;
+  font-size: 14px;
+  width: 60px;
+}
+
+.deleteBtn:hover {
+  background-color: #eee;
+}
