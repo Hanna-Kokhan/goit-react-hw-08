@@ -3,12 +3,12 @@ import {
   selectFilteredContacts,
   selectContactsLoading,
   selectContactsError,
-} from "../../redux/contactsSlice";
+} from "../../redux/contacts/selectors";
 import Contact from "../Contact/Contact";
 import { PulseLoader } from "react-spinners";
 import styles from "./ContactList.module.css";
 
-export default function ContactList() {
+const ContactList = () => {
   const contacts = useSelector(selectFilteredContacts);
   const isLoading = useSelector(selectContactsLoading);
   const error = useSelector(selectContactsError);
@@ -38,4 +38,6 @@ export default function ContactList() {
       ))}
     </ul>
   );
-}
+};
+
+export default ContactList;

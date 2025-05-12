@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.activeLink {
+  composes: link;
+  color: #fdd835;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.activeLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 3px;
+  background-color: #2196f3;
+  border-radius: 1.5px;
+}

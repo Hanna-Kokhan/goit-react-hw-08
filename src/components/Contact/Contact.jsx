@@ -1,11 +1,11 @@
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import { deleteContact } from "../../redux/contacts/operations";
 import { FaUser, FaPhone } from "react-icons/fa";
 import styles from "./Contact.module.css";
 import { toast } from "react-hot-toast";
 import { useState } from "react";
 
-export default function Contact({ contact }) {
+const Contact = ({ contact }) => {
   const dispatch = useDispatch();
   const [isDeleting, setIsDeleting] = useState(false);
 
@@ -43,4 +43,6 @@ export default function Contact({ contact }) {
       </button>
     </div>
   );
-}
+};
+
+export default Contact;

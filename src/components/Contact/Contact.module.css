@@ -2,20 +2,21 @@
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 10px;
-  width: 260px;
-  height: 120px;
-  padding: 12px;
-  border: 1px solid black;
+  width: 280px;
+  height: auto;
+  padding: 16px;
+  border: 1px solid #b0bec5;
   border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 .contact:hover {
-  transform: translateY(-6px) scale(1.09);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .info {
@@ -30,27 +31,29 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  color: #000;
+  color: #263238;
+  margin-bottom: 4px;
 }
 
 .deleteBtn {
   grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: 2;
   align-self: flex-end;
-  padding: 6px 12px;
-  padding-inline-start: 10px;
-  border: 1px solid #000;
-  background-color: white;
-  border-radius: 4px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #d32f2f;
+  color: white;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  height: fit-content;
+  height: auto;
   font-size: 14px;
-  width: 60px;
+  width: auto;
+  margin-top: 0;
 }
 
 .deleteBtn:hover {
-  background-color: #eee;
+  background-color: #c62828;
 }
