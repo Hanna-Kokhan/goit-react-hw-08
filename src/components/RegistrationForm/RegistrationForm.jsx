@@ -43,7 +43,14 @@ const RegistrationForm = () => {
           <label htmlFor="name" className={styles.label}>
             Name
           </label>
-          <Field type="text" id="name" name="name" className={styles.input} />
+          <Field
+            type="text"
+            id="name"
+            name="name"
+            className={styles.input}
+            autoComplete="name"
+          />{" "}
+          {/* Додано autocomplete */}
           <ErrorMessage name="name" component="div" className={styles.error} />
         </div>
         <div className={styles.formGroup}>
@@ -55,6 +62,7 @@ const RegistrationForm = () => {
             id="email"
             name="email"
             className={styles.input}
+            autoComplete="email"
           />
           <ErrorMessage name="email" component="div" className={styles.error} />
         </div>
@@ -67,6 +75,7 @@ const RegistrationForm = () => {
             id="password"
             name="password"
             className={styles.input}
+            autoComplete="new-password"
           />
           <ErrorMessage
             name="password"

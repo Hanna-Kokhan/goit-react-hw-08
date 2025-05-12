@@ -42,6 +42,7 @@ const LoginForm = () => {
             id="email"
             name="email"
             className={styles.input}
+            autoComplete="email"
           />
           <ErrorMessage name="email" component="div" className={styles.error} />
         </div>
@@ -54,6 +55,7 @@ const LoginForm = () => {
             id="password"
             name="password"
             className={styles.input}
+            autoComplete="current-password"
           />
           <ErrorMessage
             name="password"

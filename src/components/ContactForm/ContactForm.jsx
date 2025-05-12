@@ -45,7 +45,13 @@ const ContactForm = () => {
           <label htmlFor="name" className={styles.label}>
             Name
           </label>
-          <Field type="text" id="name" name="name" className={styles.input} />
+          <Field
+            type="text"
+            id="name"
+            name="name"
+            className={styles.input}
+            autoComplete="name"
+          />
           <ErrorMessage name="name" component="div" className={styles.error} />
         </div>
 
@@ -58,6 +64,7 @@ const ContactForm = () => {
             id="number"
             name="number"
             className={styles.input}
+            autoComplete="tel"
           />
           <ErrorMessage
             name="number"
